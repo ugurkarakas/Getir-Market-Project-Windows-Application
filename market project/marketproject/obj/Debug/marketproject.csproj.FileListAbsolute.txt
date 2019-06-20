@@ -1,0 +1,215 @@
+C:\Users\User\Desktop\marketproject\marketproject\bin\Debug\marketproject.exe.config
+C:\Users\User\Desktop\marketproject\marketproject\bin\Debug\marketproject.exe
+C:\Users\User\Desktop\marketproject\marketproject\bin\Debug\marketproject.pdb
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.csprojAssemblyReference.cache
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.Properties.Resources.resources
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.csproj.GenerateResource.cache
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.exe
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.pdb
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.menu.resources
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.giris.resources
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.kayit.resources
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.personelkayit.resources
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.personelgiris.resources
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.yonetimgiris.resources
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.guvenliksoru.resources
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.sifreyenile.resources
+C:\Users\User\Desktop\marketproject\marketproject\obj\Debug\marketproject.anamenu.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.csprojAssemblyReference.cache
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.anamenu.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.kayit.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.menu.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.giris.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.personelgiris.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.personelkayit.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.personelmenu.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.Properties.Resources.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.yonetimgiris.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.csproj.GenerateResource.cache
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.exe
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.pdb
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\marketproject.exe.config
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\marketproject.exe
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\marketproject.pdb
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\_BusinessLayer.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\_DataLayer.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\_BusinessLayer.pdb
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\_BusinessLayer.dll.config
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\_DataLayer.pdb
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\_DataLayer.dll.config
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.musteriler.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.urunler.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.csproj.CopyComplete
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.musteriekle.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.musteriguncelle.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.musterisil.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.urunekle.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.urunguncelle.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.urunsil.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.kategori.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.yonetimenu.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.basvurular.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.kategorislem.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\bin\Debug\marketproject.exe.config
+C:\Users\User\Desktop\market project - Kopya\marketproject\bin\Debug\marketproject.exe
+C:\Users\User\Desktop\market project - Kopya\marketproject\bin\Debug\marketproject.pdb
+C:\Users\User\Desktop\market project - Kopya\marketproject\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\market project - Kopya\marketproject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\market project - Kopya\marketproject\bin\Debug\_BusinessLayer.dll
+C:\Users\User\Desktop\market project - Kopya\marketproject\bin\Debug\_DataLayer.dll
+C:\Users\User\Desktop\market project - Kopya\marketproject\bin\Debug\_BusinessLayer.pdb
+C:\Users\User\Desktop\market project - Kopya\marketproject\bin\Debug\_BusinessLayer.dll.config
+C:\Users\User\Desktop\market project - Kopya\marketproject\bin\Debug\_DataLayer.pdb
+C:\Users\User\Desktop\market project - Kopya\marketproject\bin\Debug\_DataLayer.dll.config
+C:\Users\User\Desktop\market project - Kopya\marketproject\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\market project - Kopya\marketproject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.csprojAssemblyReference.cache
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.anamenu.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.basvurular.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.kategori.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.kategorislem.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.kayit.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.menu.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.giris.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.musteriekle.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.musteriguncelle.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.musteriler.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.musterisil.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.personelgiris.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.personelkayit.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.personelmenu.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.Properties.Resources.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.urunekle.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.urunguncelle.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.urunler.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.urunsil.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.yonetimenu.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.yonetimgiris.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.csproj.GenerateResource.cache
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.csproj.CopyComplete
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.exe
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.pdb
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.personeller.resources
+C:\Users\User\Desktop\market project - Kopya\marketproject\obj\Debug\marketproject.personelsil.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.personeller.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.personelsil.resources
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\LiveCharts.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\LiveCharts.pdb
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\LiveCharts.xml
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.satislar.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.kasa.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.yoneticidetay.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.yoneticiekle.resources
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\EnvDTE.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\stdole.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.11.0.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.10.0.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.14.0.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.12.0.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Designer.Interfaces.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\EnvDTE80.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.Build.Tasks.Core.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\VSLangProj.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\VSLangProj80.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.WCFReference.Interop.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.MSXML.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.Build.Utilities.Core.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.Build.Framework.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\VSLangProj2.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.11.0.xml
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.10.0.xml
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.14.0.xml
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.12.0.xml
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.Designer.Interfaces.xml
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\Microsoft.VisualStudio.WCFReference.Interop.xml
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\tr\Microsoft.VisualStudio.Data.Services.resources.dll
+C:\Users\User\Desktop\market project\marketproject\bin\Debug\tr\Microsoft.VisualStudio.Data.Core.resources.dll
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.exe.config
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\marketproject.rapor.resources
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\RdlCompile.cache
+C:\Users\User\Desktop\market project\marketproject\obj\Debug\RdlCompile.compiled

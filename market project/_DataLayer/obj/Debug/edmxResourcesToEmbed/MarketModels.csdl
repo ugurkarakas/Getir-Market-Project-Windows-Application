@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MarketModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Addres" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="quantity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="question" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="reply" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Picture" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Tc" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_CustomerID" FromRole="Customer" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="DiscountedProduct">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Discount" Type="Int32" />
+    <Property Name="ProductID" Type="Int32" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_IndirimUrun_ProductID" FromRole="DiscountedProduct" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+    </Key>
+    <Property Name="InvoiceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InvoiceDate" Type="DateTime" Precision="0" />
+    <Property Name="ProductName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TotalAmount" Type="Int32" />
+    <Property Name="MarketSafeID" Type="Int32" />
+    <Property Name="OrderID" Type="Int32" />
+    <NavigationProperty Name="MarketSafe" Relationship="Self.FK_Invoice_MarketSafeID" FromRole="Invoice" ToRole="MarketSafe" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_Invoice_OrderID" FromRole="Invoice" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="JobApplication">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Addres" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Picture" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Tc" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Experience" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Education" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GovernanceID" Type="Int32" />
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Governance" Relationship="MarketModel.FK_JobApplication_GovernanceID" FromRole="JobApplication" ToRole="Governance" />
+  </EntityType>
+  <EntityType Name="MarketSafe">
+    <Key>
+      <PropertyRef Name="MarketSafeID" />
+    </Key>
+    <Property Name="MarketSafeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TotalMoney" Type="Int32" />
+    <Property Name="GovernanceID" Type="Int32" />
+    <Property Name="StaffID" Type="Int32" />
+    <Property Name="ProductID" Type="Int32" />
+    <NavigationProperty Name="Invoices" Relationship="Self.FK_Invoice_MarketSafeID" FromRole="MarketSafe" ToRole="Invoice" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_MarketSafe_ProductID" FromRole="MarketSafe" ToRole="Product" />
+    <NavigationProperty Name="Staff" Relationship="Self.FK_MarketSafe_StaffID" FromRole="MarketSafe" ToRole="Staff" />
+    <NavigationProperty Name="Governance" Relationship="MarketModel.FK_MarketSafe_GovernanceID" FromRole="MarketSafe" ToRole="Governance" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ProductName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="ProductsNumber" Type="Int32" />
+    <Property Name="ProductPrice" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TotalMoney" Type="Int32" />
+    <Property Name="BarcodeNo" Type="Int32" />
+    <Property Name="OrderDate" Type="DateTime" Precision="0" />
+    <Property Name="CustomerID" Type="Int32" />
+    <Property Name="ProductID" Type="Int32" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK_Orders_CustomerID" FromRole="Orders" ToRole="Customer" />
+    <NavigationProperty Name="Invoices" Relationship="Self.FK_Invoice_OrderID" FromRole="Orders" ToRole="Invoice" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Orders_ProductID" FromRole="Orders" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BarcodeNo" Type="String" MaxLength="13" Unicode="false" FixedLength="false" />
+    <Property Name="ProductName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ProductPicture" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Brand" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ExpirationDate" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ProductionPlace" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Contents" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Weights" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Stock" Type="Int32" />
+    <NavigationProperty Name="DiscountedProducts" Relationship="Self.FK_IndirimUrun_ProductID" FromRole="Product" ToRole="DiscountedProduct" />
+    <NavigationProperty Name="MarketSafes" Relationship="Self.FK_MarketSafe_ProductID" FromRole="Product" ToRole="MarketSafe" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_ProductID" FromRole="Product" ToRole="Orders" />
+    <NavigationProperty Name="ProductCategories" Relationship="Self.FK_ProductCategory_ProductID" FromRole="Product" ToRole="ProductCategory" />
+    <NavigationProperty Name="Staffs" Relationship="Self.FK_Staff_ProductID" FromRole="Product" ToRole="Staff" />
+    <NavigationProperty Name="Suppliers" Relationship="Self.FK_Suppliers_ProductID" FromRole="Product" ToRole="Suppliers" />
+    <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ProductCategory">
+    <Key>
+      <PropertyRef Name="categoryID" />
+    </Key>
+    <Property Name="categoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ProductID" Type="Int32" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_ProductCategory_ProductID" FromRole="ProductCategory" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="StaffID" />
+    </Key>
+    <Property Name="StaffID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Addres" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Picture" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Salary" Type="Int32" />
+    <Property Name="Phone" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tc" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ProductID" Type="Int32" />
+    <NavigationProperty Name="MarketSafes" Relationship="Self.FK_MarketSafe_StaffID" FromRole="Staff" ToRole="MarketSafe" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Staff_ProductID" FromRole="Staff" ToRole="Product" />
+    <NavigationProperty Name="Governances" Relationship="MarketModel.FK_Governance_StaffID" FromRole="Staff" ToRole="Governance" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SuppliersName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ProductName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ProductsNumber" Type="Int32" />
+    <Property Name="Addres" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="Int32" />
+    <Property Name="ProductID" Type="Int32" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Suppliers_ProductID" FromRole="Suppliers" ToRole="Product" />
+  </EntityType>
+  <Association Name="FK_Orders_CustomerID">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IndirimUrun_ProductID">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="DiscountedProduct" Type="Self.DiscountedProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="DiscountedProduct">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoice_MarketSafeID">
+    <End Role="MarketSafe" Type="Self.MarketSafe" Multiplicity="0..1" />
+    <End Role="Invoice" Type="Self.Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MarketSafe">
+        <PropertyRef Name="MarketSafeID" />
+      </Principal>
+      <Dependent Role="Invoice">
+        <PropertyRef Name="MarketSafeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoice_OrderID">
+    <End Role="Orders" Type="Self.Order" Multiplicity="0..1" />
+    <End Role="Invoice" Type="Self.Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="Invoice">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MarketSafe_ProductID">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="MarketSafe" Type="Self.MarketSafe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="MarketSafe">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MarketSafe_StaffID">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
+    <End Role="MarketSafe" Type="Self.MarketSafe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="StaffID" />
+      </Principal>
+      <Dependent Role="MarketSafe">
+        <PropertyRef Name="StaffID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_ProductID">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductCategory_ProductID">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="ProductCategory" Type="Self.ProductCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductCategory">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Staff_ProductID">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="Staff">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Suppliers_ProductID">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="Suppliers" Type="Self.Supplier" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="Suppliers">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MarketEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Customers" EntityType="Self.Customer" />
+    <EntitySet Name="DiscountedProducts" EntityType="Self.DiscountedProduct" />
+    <EntitySet Name="Invoices" EntityType="Self.Invoice" />
+    <EntitySet Name="JobApplications" EntityType="Self.JobApplication" />
+    <EntitySet Name="MarketSafes" EntityType="Self.MarketSafe" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="ProductCategories" EntityType="Self.ProductCategory" />
+    <EntitySet Name="Staffs" EntityType="Self.Staff" />
+    <EntitySet Name="Suppliers" EntityType="Self.Supplier" />
+    <AssociationSet Name="FK_Orders_CustomerID" Association="Self.FK_Orders_CustomerID">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IndirimUrun_ProductID" Association="Self.FK_IndirimUrun_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="DiscountedProduct" EntitySet="DiscountedProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_MarketSafeID" Association="Self.FK_Invoice_MarketSafeID">
+      <End Role="MarketSafe" EntitySet="MarketSafes" />
+      <End Role="Invoice" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_OrderID" Association="Self.FK_Invoice_OrderID">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="Invoice" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MarketSafe_ProductID" Association="Self.FK_MarketSafe_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="MarketSafe" EntitySet="MarketSafes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MarketSafe_StaffID" Association="Self.FK_MarketSafe_StaffID">
+      <End Role="Staff" EntitySet="Staffs" />
+      <End Role="MarketSafe" EntitySet="MarketSafes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_ProductID" Association="Self.FK_Orders_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductCategory_ProductID" Association="Self.FK_ProductCategory_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductCategory" EntitySet="ProductCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Staff_ProductID" Association="Self.FK_Staff_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Staff" EntitySet="Staffs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Suppliers_ProductID" Association="Self.FK_Suppliers_ProductID">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Suppliers" EntitySet="Suppliers" />
+    </AssociationSet>
+    <FunctionImport Name="SP_ProductStockByCat" ReturnType="Collection(MarketModel.SP_ProductStockByCat_Result)" />
+    <EntitySet Name="Sepets" EntityType="MarketModel.Sepet" />
+    <EntitySet Name="Sales" EntityType="MarketModel.Sale" />
+    <EntitySet Name="Governances" EntityType="MarketModel.Governance" />
+    <AssociationSet Name="FK_Governance_StaffID" Association="MarketModel.FK_Governance_StaffID">
+      <End Role="Staff" EntitySet="Staffs" />
+      <End Role="Governance" EntitySet="Governances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobApplication_GovernanceID" Association="MarketModel.FK_JobApplication_GovernanceID">
+      <End Role="Governance" EntitySet="Governances" />
+      <End Role="JobApplication" EntitySet="JobApplications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MarketSafe_GovernanceID" Association="MarketModel.FK_MarketSafe_GovernanceID">
+      <End Role="Governance" EntitySet="Governances" />
+      <End Role="MarketSafe" EntitySet="MarketSafes" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="SP_ProductStockByCat_Result">
+    <Property Type="String" Name="CategoryName" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Stock" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="Sepet">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Soyad" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BarcodeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ProductName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Brand" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="quantity" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TotalPrice" Type="Int32" />
+    <Property Name="DateTimee" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Sale">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerFirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerLastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BarcodeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ProductName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="quantity" Type="Int32" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="TotalPrice" Type="Int32" />
+    <Property Name="DateTimee" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Governance">
+    <Key>
+      <PropertyRef Name="GovernanceID" />
+    </Key>
+    <Property Name="GovernanceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="StaffID" Type="Int32" />
+    <NavigationProperty Name="Staff" Relationship="MarketModel.FK_Governance_StaffID" FromRole="Governance" ToRole="Staff" />
+    <NavigationProperty Name="JobApplications" Relationship="MarketModel.FK_JobApplication_GovernanceID" FromRole="Governance" ToRole="JobApplication" />
+    <NavigationProperty Name="MarketSafes" Relationship="MarketModel.FK_MarketSafe_GovernanceID" FromRole="Governance" ToRole="MarketSafe" />
+  </EntityType>
+  <Association Name="FK_Governance_StaffID">
+    <End Type="MarketModel.Staff" Role="Staff" Multiplicity="0..1" />
+    <End Type="MarketModel.Governance" Role="Governance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="StaffID" />
+      </Principal>
+      <Dependent Role="Governance">
+        <PropertyRef Name="StaffID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobApplication_GovernanceID">
+    <End Type="MarketModel.Governance" Role="Governance" Multiplicity="0..1" />
+    <End Type="MarketModel.JobApplication" Role="JobApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Governance">
+        <PropertyRef Name="GovernanceID" />
+      </Principal>
+      <Dependent Role="JobApplication">
+        <PropertyRef Name="GovernanceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MarketSafe_GovernanceID">
+    <End Type="MarketModel.Governance" Role="Governance" Multiplicity="0..1" />
+    <End Type="MarketModel.MarketSafe" Role="MarketSafe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Governance">
+        <PropertyRef Name="GovernanceID" />
+      </Principal>
+      <Dependent Role="MarketSafe">
+        <PropertyRef Name="GovernanceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

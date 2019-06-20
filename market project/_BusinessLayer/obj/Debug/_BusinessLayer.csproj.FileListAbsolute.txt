@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\market project\_BusinessLayer\bin\Debug\_BusinessLayer.dll.config
+C:\Users\User\Desktop\market project\_BusinessLayer\bin\Debug\_BusinessLayer.dll
+C:\Users\User\Desktop\market project\_BusinessLayer\bin\Debug\_BusinessLayer.pdb
+C:\Users\User\Desktop\market project\_BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\market project\_BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\market project\_BusinessLayer\bin\Debug\_DataLayer.dll
+C:\Users\User\Desktop\market project\_BusinessLayer\bin\Debug\_DataLayer.pdb
+C:\Users\User\Desktop\market project\_BusinessLayer\bin\Debug\_DataLayer.dll.config
+C:\Users\User\Desktop\market project\_BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\market project\_BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\market project\_BusinessLayer\obj\Debug\_BusinessLayer.csprojAssemblyReference.cache
+C:\Users\User\Desktop\market project\_BusinessLayer\obj\Debug\_BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\market project\_BusinessLayer\obj\Debug\_BusinessLayer.csproj.CopyComplete
+C:\Users\User\Desktop\market project\_BusinessLayer\obj\Debug\_BusinessLayer.dll
+C:\Users\User\Desktop\market project\_BusinessLayer\obj\Debug\_BusinessLayer.pdb

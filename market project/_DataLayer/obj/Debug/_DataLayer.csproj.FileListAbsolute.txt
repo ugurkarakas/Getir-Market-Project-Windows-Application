@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\market project\_DataLayer\bin\Debug\_DataLayer.dll.config
+C:\Users\User\Desktop\market project\_DataLayer\bin\Debug\_DataLayer.dll
+C:\Users\User\Desktop\market project\_DataLayer\bin\Debug\_DataLayer.pdb
+C:\Users\User\Desktop\market project\_DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\market project\_DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\market project\_DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\market project\_DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\market project\_DataLayer\obj\Debug\_DataLayer.csprojAssemblyReference.cache
+C:\Users\User\Desktop\market project\_DataLayer\obj\Debug\_DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\market project\_DataLayer\obj\Debug\_DataLayer.csproj.CopyComplete
+C:\Users\User\Desktop\market project\_DataLayer\obj\Debug\_DataLayer.dll
+C:\Users\User\Desktop\market project\_DataLayer\obj\Debug\_DataLayer.pdb

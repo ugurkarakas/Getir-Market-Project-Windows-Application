@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1431167C-1219-40F0-9370-CB8564576433}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>marketproject</RootNamespace>
+    <AssemblyName>marketproject</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anamenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anamenu.Designer.cs">
+      <DependentUpon>anamenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="basvurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="basvurular.Designer.cs">
+      <DependentUpon>basvurular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bridge\ISalesObject.cs" />
+    <Compile Include="kasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kasa.Designer.cs">
+      <DependentUpon>kasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kategori.Designer.cs">
+      <DependentUpon>kategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kategorislem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kategorislem.Designer.cs">
+      <DependentUpon>kategorislem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayit.Designer.cs">
+      <DependentUpon>kayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarketDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriekle.Designer.cs">
+      <DependentUpon>musteriekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriguncelle.Designer.cs">
+      <DependentUpon>musteriguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriler.Designer.cs">
+      <DependentUpon>musteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musterisil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musterisil.Designer.cs">
+      <DependentUpon>musterisil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelgiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelgiris.Designer.cs">
+      <DependentUpon>personelgiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelkayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelkayit.Designer.cs">
+      <DependentUpon>personelkayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personeller.Designer.cs">
+      <DependentUpon>personeller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelmenu.Designer.cs">
+      <DependentUpon>personelmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelsil.Designer.cs">
+      <DependentUpon>personelsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rapor.Designer.cs">
+      <DependentUpon>rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satislar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satislar.Designer.cs">
+      <DependentUpon>satislar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="urunekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunekle.Designer.cs">
+      <DependentUpon>urunekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urunguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunguncelle.Designer.cs">
+      <DependentUpon>urunguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunler.Designer.cs">
+      <DependentUpon>urunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urunsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunsil.Designer.cs">
+      <DependentUpon>urunsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticidetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yoneticidetay.Designer.cs">
+      <DependentUpon>yoneticidetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticiekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yoneticiekle.Designer.cs">
+      <DependentUpon>yoneticiekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yonetimenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yonetimenu.Designer.cs">
+      <DependentUpon>yonetimenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yonetimgiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yonetimgiris.Designer.cs">
+      <DependentUpon>yonetimgiris.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anamenu.resx">
+      <DependentUpon>anamenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="basvurular.resx">
+      <DependentUpon>basvurular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kasa.resx">
+      <DependentUpon>kasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kategori.resx">
+      <DependentUpon>kategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kategorislem.resx">
+      <DependentUpon>kategorislem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayit.resx">
+      <DependentUpon>kayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriekle.resx">
+      <DependentUpon>musteriekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriguncelle.resx">
+      <DependentUpon>musteriguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriler.resx">
+      <DependentUpon>musteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musterisil.resx">
+      <DependentUpon>musterisil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelgiris.resx">
+      <DependentUpon>personelgiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelkayit.resx">
+      <DependentUpon>personelkayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personeller.resx">
+      <DependentUpon>personeller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelmenu.resx">
+      <DependentUpon>personelmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelsil.resx">
+      <DependentUpon>personelsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rapor.resx">
+      <DependentUpon>rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UrunRaporu.rdlc" />
+    <EmbeddedResource Include="satislar.resx">
+      <DependentUpon>satislar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunekle.resx">
+      <DependentUpon>urunekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunguncelle.resx">
+      <DependentUpon>urunguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunler.resx">
+      <DependentUpon>urunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunsil.resx">
+      <DependentUpon>urunsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yoneticidetay.resx">
+      <DependentUpon>yoneticidetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yoneticiekle.resx">
+      <DependentUpon>yoneticiekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yonetimenu.resx">
+      <DependentUpon>yonetimenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yonetimgiris.resx">
+      <DependentUpon>yonetimgiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MarketDataSet.xsc">
+      <DependentUpon>MarketDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MarketDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarketDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarketDataSet.xss">
+      <DependentUpon>MarketDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\getir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\resim1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayvansaray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-1001596_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile-2092113_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_png_77258.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-profil-png-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64572.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\_BusinessLayer\_BusinessLayer.csproj">
+      <Project>{50040aac-0210-4afa-8b69-fa19a1d7f3cb}</Project>
+      <Name>_BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_DataLayer\_DataLayer.csproj">
+      <Project>{49870483-63e2-4b5f-9aba-9669d5e262c6}</Project>
+      <Name>_DataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bosresim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parakasasi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasa.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yapim-asamasi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1leftarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1leftarrow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2leftarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1uparrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1rightarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2rightarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

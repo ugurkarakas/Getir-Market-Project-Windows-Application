@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a9ffac5a9f5e4934a4f53b1cec1dcab8" Name="Diagram1">
+        <EntityTypeShape EntityType="MarketModel.Customer" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.DiscountedProduct" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.Invoice" Width="1.5" PointX="6.875" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.JobApplication" Width="1.5" PointX="7.5" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.MarketSafe" Width="1.5" PointX="7.5" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.Order" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.Product" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.ProductCategory" Width="1.5" PointX="3" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.Staff" Width="1.5" PointX="3" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.Supplier" Width="1.5" PointX="3" PointY="23.75" IsExpanded="true" />
+        <AssociationConnector Association="MarketModel.FK_Orders_CustomerID" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_IndirimUrun_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_Invoice_MarketSafeID" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_Invoice_OrderID" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_MarketSafe_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_MarketSafe_StaffID" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_Orders_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_ProductCategory_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_Staff_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_Suppliers_ProductID" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MarketModel.Sepet" Width="1.5" PointX="0.875" PointY="15.875" />
+        <EntityTypeShape EntityType="MarketModel.Sale" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MarketModel.Governance" Width="1.5" PointX="5.25" PointY="19.5" />
+        <AssociationConnector Association="MarketModel.FK_Governance_StaffID" />
+        <AssociationConnector Association="MarketModel.FK_JobApplication_GovernanceID" />
+        <AssociationConnector Association="MarketModel.FK_MarketSafe_GovernanceID" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
